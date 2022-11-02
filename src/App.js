@@ -1,5 +1,4 @@
 import Nav from './components/Nav';
-import '../src/index.css';
 
 
 function App() {
@@ -9,5 +8,8 @@ function App() {
     </div>
   );
 }
+
+
+
 
 export default App;
