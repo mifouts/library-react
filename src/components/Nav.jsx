@@ -1,11 +1,12 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import LibraryLogo from '../assets/Library.svg';
 
 const Nav = () => {
     <nav>
         <div className="nav_container">
             <a href="/">
-                <img src="" alt="" className='logo'/>
+                <img src={LibraryLogo} alt="" className='logo'/>
             </a>
             <ul className="nav__links">
                 <li className="nav__list">
