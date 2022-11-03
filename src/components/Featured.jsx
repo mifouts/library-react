@@ -23,6 +23,10 @@ const Featured = () => {
                         </div>
                         <div className="book__ratings">
                             <FontAwesomeIcon icon='star'/>
+                            <FontAwesomeIcon icon='star'/>
+                            <FontAwesomeIcon icon='star'/>
+                            <FontAwesomeIcon icon='star'/>
+                            <FontAwesomeIcon icon='star-half-alt'/>
                         </div>
                     </div>
                 </div>
