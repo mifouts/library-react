@@ -1,10 +1,10 @@
 import React from 'react'
 
-function Highlight() {
+const Highlight = ({ icon }) => {
   return (
     <div className="highlight">
             <div className="highlight__img">
-                 <FontAwesomeIcon icon="bolt"/>
+                 {icon}
              </div>
                 <h3 className="highlight__subtitle">
                     Easy and Quick

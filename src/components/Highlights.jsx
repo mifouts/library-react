@@ -11,10 +11,10 @@ function Highlights() {
                 Why choose <span className="purple">Library</span>? 
                 </h2>
                 <div className="highlight__wrapper">
-                    <Highlight />
+                    <Highlight icon={<FontAwesomeIcon icon="bolt"/>}/>
                     <div className="highlight">
                         <div className="highlight__img">
-                            <FontAwesomeIcon icon="bolt"/>
+                            
                         </div>
                         <h3 className="highlight__subtitle">
                             Easy and Quick
