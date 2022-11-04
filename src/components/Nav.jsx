@@ -4,7 +4,7 @@ import LibraryLogo from '../assets/Library.svg';
 
 const Nav = () => {
     function OpenMenu() {
-        document.body.classList += " menu__open"
+        document.body.classList += " menu--open"
     }
 
     function CloseMenu () {
