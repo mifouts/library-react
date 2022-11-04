@@ -13,6 +13,9 @@ export default function Books({ books: initialBooks }) {
         if (filter === 'HIGH_TO_LOW') {
             setBooks(books.slice().sort((a,b) => (b.salePrice || b.originalPrice) - (a.salePrice || a.originalPrice)))
         }
+        if (filter === 'RATING') {
+            setBooks(books.slice().sort((a,b) => (a.rating) - (b.rating)))
+        }
     }
   return (
     <div id="books__body">
