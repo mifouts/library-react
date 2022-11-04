@@ -1,4 +1,5 @@
 import React from 'react'
+import { books } from '../data';
 
 export default function Books() {
   return (
@@ -16,6 +17,11 @@ export default function Books() {
                                     <option value="HIGH_TO_LOW">Price, High to Low</option>
                                     <option value="RATING">Rating</option>
                                 </select>
+                        </div>
+                        <div className="books">
+                            {
+                                books.map((book) => (<Book book={book} key={book.id}/>
+                                ))}
                         </div>
                     </div>
                 </div>
