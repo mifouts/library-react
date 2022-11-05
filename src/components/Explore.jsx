@@ -8,7 +8,7 @@ function Explore() {
                 <h2>
                     Explore More <span className='purple'>Books</span>
                 </h2>
-                <a href="/">
+                <Link to="/">
                     <button className="btn">Explore Books</button>
                 </a>
             </div>
