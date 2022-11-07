@@ -16,6 +16,15 @@ export default function BookInfo({ books }) {
                           <h2 className="book__selected--title--top">Books</h2>
                         </Link>
                     </div>
+                    <div className="book__selected">
+                      <figure className="book__selected--figure">
+                        <img src="" alt="" className='book__selected--ig' />
+                      </figure>
+                      <div className="book__selected--description">
+                        <h2 className="book__selected--title">Crack the Code</h2>
+                        <FontAwesomeIcon icon="star"/>
+                      </div>
+                    </div>
                 </div>
             </div>
         </main>
