@@ -20,7 +20,7 @@ export default function BookInfo({ books }) {
                     </div>
                     <div className="book__selected">
                       <figure className="book__selected--figure">
-                        <img src="" alt="" className='book__selected--ig' />
+                        <img src="" alt="" className='book__selected--img' />
                       </figure>
                       <div className="book__selected--description">
                         <h2 className="book__selected--title">Crack the Code</h2>
