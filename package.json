@@ -1,6 +1,7 @@
 {
   "name": "library-react",
   "version": "0.1.0",
+  "homepage": "https://mifouts.github.io/library-react/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
