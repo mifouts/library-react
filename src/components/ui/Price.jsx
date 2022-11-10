@@ -14,5 +14,6 @@ export default function Price({ salePrice, originalPrice }) {
           <>${originalPrice.toFixed(2)}</>
         )}
       </div>
+
   )
 }

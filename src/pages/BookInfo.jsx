@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom/cjs/react-router-dom.min'
 import Price from '../components/ui/Price'
 import Rating from '../components/ui/Rating'
 
+
 export default function BookInfo({ books }) {
   return (
     <div id="books__body">
@@ -14,7 +15,7 @@ export default function BookInfo({ books }) {
                         <Link to="/books" className="book__link">
                               <FontAwesomeIcon icon="arrow-left"/>
                         </Link>
-                        <Link to="/books" className="book__link">
+                        <Link to="/book" className="book__link">
                           <h2 className="book__selected--title--top">Books</h2>
                         </Link>
                     </div>
@@ -26,7 +27,7 @@ export default function BookInfo({ books }) {
                         <h2 className="book__selected--title">Crack the Code</h2>
                         <Rating rating="4.5" />
                         <div className="book__selected--price">
-                          <Price />
+                          
                         </div>
                       </div>
                     </div>
