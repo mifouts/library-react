@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link, useParams } from "react-router-dom/cjs/react-router-dom.min";
+import Book from "../components/ui/Book";
 import Price from "../components/ui/Price";
 import Rating from "../components/ui/Rating";
 
@@ -63,6 +64,10 @@ export default function BookInfo({ books }) {
                 Recommended Books
               </h2>
             </div>
+           {books
+           .filter((book) => book.rating === 5 && book.id !== id )
+            .map((book) => (<Book book={book} key={book.id} />
+              ))} 
             
           </div>
         </div>
