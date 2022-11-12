@@ -1,10 +1,13 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import { Link, useParams } from "react-router-dom/cjs/react-router-dom.min";
 import Price from "../components/ui/Price";
 import Rating from "../components/ui/Rating";
 
 export default function BookInfo({ books }) {
+  const { id } = useParams();
+  const book = books.find(book => +book.id === +id);
+  console.log(book)
   return (
     <div id="books__body">
       <main id="books__main">
@@ -20,13 +23,13 @@ export default function BookInfo({ books }) {
             </div>
             <div className="book__selected">
               <figure className="book__selected--figure">
-                <img src="" alt="" className="book__selected--img" />
+                <img src={book.url} alt="" className="book__selected--img" />
               </figure>
               <div className="book__selected--description">
-                <h2 className="book__selected--title">Crack the Code</h2>
-                <Rating rating="4.5" />
+                <h2 className="book__selected--title">{book.title}</h2>
+                <Rating rating={book.rating} />
                 <div className="book__selected--price">
-                  <Price originalPrice={50} />
+                  <Price originalPrice={book.originalPrice} salePrice={book.salePrice} />
                 </div>
                 <div className="book__summary">
                   <div className="book__summary--title">Summary</div>
