@@ -56,7 +56,7 @@ export default function BookInfo({ books }) {
 
         <div className="books__container">
           <div className="row">
-            <div className="books__selected--top">
+            <div className="book__selected--top">
               <h2 className="book__selected--title--top">
                 Recommended Books
               </h2>
