@@ -7,13 +7,18 @@ import { books } from './data';
 import BookInfo from './pages/BookInfo';
 import Cart from './pages/Cart';
 import React, { useState } from 'react';
+import { useEffect } from 'react';
 
 function App() {
   const [cart, setCart] = useState([]);
 
   function addToCart(book) {
-    console.log(book)
+    setCart([...cart, {...book, quantity: 1}])
   }
+
+  useEffect(() => {
+  console.log(cart);
+}, [cart])
 
   return (
     <Router>
