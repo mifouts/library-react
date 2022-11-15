@@ -53,7 +53,10 @@ export default function Cart() {
                             <span>Total</span>
                             <span>$10</span>
                         </div>
-                        
+                        <button className="btn btn__checkout no-cursor"
+                        onClick={() => alert('have not got around to doing this')}>
+                            Proceed to Checkout
+                        </button>
                     </div>
                 </div>
             </div>
