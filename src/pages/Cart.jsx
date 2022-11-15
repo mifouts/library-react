@@ -11,9 +11,9 @@ export default function Cart() {
                     </div>
                     <div className="cart">
                         <div className="cart__header">
-                            <div className="cart__book">Book</div>
-                            <div className="cart__quantity">Quantity</div>
-                            <div className="cart__total">Price</div>
+                            <span className="cart__book">Book</span>
+                            <span className="cart__quantity">Quantity</span>
+                            <span className="cart__total">Price</span>
                         </div>
                     </div>
                 </div>
