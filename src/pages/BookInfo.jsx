@@ -49,7 +49,7 @@ export default function BookInfo({ books, addToCart }) {
                     voluptatibus!
                   </p>
                 </div>
-                <button className="btn" onClick={addToCart}>
+                <button className="btn" onClick={() => addToCart(book)}>
                   Add to Cart
                 </button>
               </div>

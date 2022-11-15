@@ -11,8 +11,8 @@ import React, { useState } from 'react';
 function App() {
   const [cart, setCart] = useState([]);
 
-  function addToCart() {
-
+  function addToCart(book) {
+    console.log(book)
   }
 
   return (
