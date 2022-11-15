@@ -40,6 +40,21 @@ export default function Cart() {
                             </div>
                         </div>
                     </div>
+                    <div className="total">
+                        <div className="total__item total__sub-total">
+                            <span>Subtotal</span>
+                            <span>$9</span>
+                        </div>
+                        <div className="total__item total__tax">
+                            <span>Tax</span>
+                            <span>$1</span>
+                        </div>
+                        <div className="total__item total__price">
+                            <span>Total</span>
+                            <span>$10</span>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
             </main>
