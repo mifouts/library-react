@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Cart({ cart }) {
+export default function Cart({ cart, changeQuantity }) {
   return (
     <div id="books__body">
       <main id="books__main">
@@ -35,6 +35,8 @@ export default function Cart({ cart }) {
                           min={0}
                           max={99}
                           className="cart__input"
+                          value={book.quantity}
+                          onChange={(event) => changeQuantity(book, event.target.value)}
                         />
                       </div>
                       <div className="cart__total">$10</div>
