@@ -23,9 +23,9 @@ export default function Cart({ cart }) {
                         <img src={book.url} className="cart__book--img" alt="" />
                         <div className="cart__book--info">
                           <span className="cart__book--title">
-                            Crack the Code
+                            {book.title}
                           </span>
-                          <span className="cart__book--price">$10,000</span>
+                          <span className="cart__book--price">${(book.salePrice || book.originalPrice).toFixed(2) }</span>
                           <button className="cart__book--remove">Remove</button>
                         </div>
                       </div>
