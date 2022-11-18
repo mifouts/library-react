@@ -1,10 +1,10 @@
 import React from "react";
 
-export default function Cart({ cart, changeQuantity }) {
+export default function Cart({ cart, changeQuantity, removeItem }) {
         const total = () => {
             let price = 0;
             cart.forEach((item) => {
-                price += +((item.salePrice || item.originalPrice) * item.quantity).toFixed(2);
+                price += +((item.salePrice || item.originalPrice) * item.quantity);
             });
                 return price;
         }
@@ -33,7 +33,7 @@ export default function Cart({ cart, changeQuantity }) {
                             {book.title}
                           </span>
                           <span className="cart__book--price">${(book.salePrice || book.originalPrice).toFixed(2) }</span>
-                          <button className="cart__book--remove">Remove</button>
+                          <button className="cart__book--remove" onClick={removeItem}>Remove</button>
                         </div>
                       </div>
                       <div className="cart__quantity">
