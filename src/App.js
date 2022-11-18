@@ -18,16 +18,15 @@ function App() {
 
   function changeQuantity(book, quantity) {
       setCart(cart.map((item) => {
-        if (item.id === book.id) {
-          return {
+        return item.id === book.id 
+          ?
+           {
             ...item,
             quantity: +quantity,
           }
-        } 
-        else {
-          return item
-        }
-      }))
+          : item;
+        })
+      );
   }
 
   useEffect(() => {
