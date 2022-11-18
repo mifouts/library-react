@@ -1,16 +1,13 @@
 import React from "react";
 
 export default function Cart({ cart, changeQuantity }) {
-    const total = () => {
+        const total = () => {
             let price = 0;
             cart.forEach((item) => {
-                price += +(item.salePrice || item.originalPrice).toFixed(2);
+                price += +((item.salePrice || item.originalPrice) * item.quantity).toFixed(2);
             });
-            return price;
-    }
-    const subTotal =  () => {
-
-    }
+                return price;
+        }
   return (
     <div id="books__body">
       <main id="books__main">
@@ -66,7 +63,7 @@ export default function Cart({ cart, changeQuantity }) {
               </div>
               <div className="total__item total__price">
                 <span>Total</span>
-                <span>${total()}</span>
+                <span>${total}</span>
               </div>
               <button
                 className="btn btn__checkout no-cursor"
