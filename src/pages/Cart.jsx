@@ -1,4 +1,6 @@
 import React from "react";
+import EmptyCart from "../assets/empty_cart.svg"
+
 
 export default function Cart({ cart, changeQuantity, removeItem }) {
         const total = () => {
@@ -50,6 +52,9 @@ export default function Cart({ cart, changeQuantity, removeItem }) {
                     </div>
                   );
                 })}
+              </div>
+              <div className="cart__empty">
+                <img src={EmptyCart} alt="" className="cart__empty--img" />
               </div>
             </div>
             <div className="total">
