@@ -48,7 +48,7 @@ function App() {
   return (
     <Router>
     <div className="App">
-  <Nav numberOfItems={numberOfItems}/>
+  <Nav numberOfItems={numberOfItems()}/>
   <Route path="/" exact component={Home}/>
   <Route path="/books" exact render={() => <Books books={books} />} />
   <Route path="/books/:id" render={() => <BookInfo books={books} addToCart={addToCart} cart={cart} />} />
