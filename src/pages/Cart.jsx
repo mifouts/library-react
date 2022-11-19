@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import EmptyCart from "../assets/empty_cart.svg"
 
 
@@ -55,6 +56,10 @@ export default function Cart({ cart, changeQuantity, removeItem }) {
               </div>
               <div className="cart__empty">
                 <img src={EmptyCart} alt="" className="cart__empty--img" />
+                <h2>You don't have any books in your cart.</h2>
+                <Link>
+                <button className="btn">Browse Books</button>
+                </Link>
               </div>
             </div>
             <div className="total">
